@@ -31,3 +31,44 @@ Schematic for the Pothile Detector
 
 Schematic for the Speed Detector
 ![alt text](https://github.com/bihy1234/speed-and-pothole-detection/blob/main/Schematic/ARDUINO-speed_2020-12-07_14-23-06.png)
+
+# Usage
+Preliminary setup:
+
+Install all the hardware according the schematics listed above.
+
+Install Arduino IDE.
+
+Compile the code 
+
+Open the Serial Monitor
+
+The code is structured so the Serial Monitor can output the speed when a car passes through the IR sensors, and it will show if there is a pothole ahead. There isn’t anything else to do than make the code run while testing its functionality with a remote controlled car.
+It is worth noting how the speed calculation and the pothole detection works, in the case of the speed calculation, the Arduino will get time that the car needed to pass from one IR sensor to another, having the time, and the known distance between the two IR sensors, we are able to calculate the speed with a simple speed formula:
+
+V=m/s
+
+Where V is the speed of the car, m is the distance between the both IR sensors and s is the time that the car took to pass from one IR sensor to another. Have in mind that in case of the car accelerating or deaccelerating between the IR sensors, the Arduino will output the speed as an average of the change of speed. 
+As for the pothole detecting, we use the ultrasonic sensor, which sends an ultrasonic wave that will echo or “bounce” back to the sensor, depending on the time taken by the ultrasonic wave to go, and bounce back, the Arduino is able to calculate the distance between the sensor and the object or surface on which the ultrasonic wave bounced back. The formula used to do the calculation is:
+
+m = s*0.34/2
+
+Where m is the distance between an object or surface, and the sensor, and s is the time taken by the ultrasonic wave to go and come back.
+
+# Team
+The build team consists of:
+
+Bharat Patel - Worked on Speed Detector
+
+Harshkumar Patel - Worked on Speed and Pothole Detector
+
+Ina Patel - Worked on Pothole Detector
+
+Yuvraj Patel - Worked on Pothole Detector 
+
+# Credits
+Muhammad Ansar: for the Car Speed Detector project
+
+Trevor Tomesh: Professor 
+
+Alex Clarke: Lab Co-ordinator
