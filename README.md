@@ -55,16 +55,7 @@ m = s*0.34/2
 
 Where m is the distance between an object or surface, and the sensor, and s is the time taken by the ultrasonic wave to go and come back.
 
-# Team
-The build team consists of:
 
-Bharat Patel - Worked on Speed Detector
-
-Harshkumar Patel - Worked on Speed and Pothole Detector
-
-Ina Patel - Worked on Pothole Detector
-
-Yuvraj Patel - Worked on Pothole Detector 
 
 # Credits
 Muhammad Ansar: for the Car Speed Detector project
